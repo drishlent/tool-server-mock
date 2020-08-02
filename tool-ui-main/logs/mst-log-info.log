@@ -1,0 +1,29 @@
+2020-08-01 23:15:08,711 INFO  [com.das.MockServerToolLauncher] MST Application statered on date : Sat Aug 01 23:15:08 AEST 2020
+2020-08-01 23:15:10,875 INFO  [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2020-08-01 23:15:10,900 INFO  [org.hibernate.Version] HHH000412: Hibernate Core {4.0.1.Final}
+2020-08-01 23:15:10,908 INFO  [org.hibernate.cfg.Environment] HHH000206: hibernate.properties not found
+2020-08-01 23:15:10,911 INFO  [org.hibernate.cfg.Environment] HHH000021: Bytecode provider name : javassist
+2020-08-01 23:15:11,694 INFO  [org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2020-08-01 23:15:11,700 INFO  [org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000115: Hibernate connection pool size: 20
+2020-08-01 23:15:11,700 INFO  [org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000006: Autocommit mode: true
+2020-08-01 23:15:11,701 INFO  [org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000401: using driver [org.h2.Driver] at URL [jdbc:h2:mem:db1]
+2020-08-01 23:15:11,701 INFO  [org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl] HHH000046: Connection properties: {autocommit=true, release_mode=auto}
+2020-08-01 23:15:12,077 INFO  [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-08-01 23:15:12,102 INFO  [org.hibernate.engine.jdbc.internal.LobCreatorBuilder] HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2020-08-01 23:15:12,127 INFO  [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+2020-08-01 23:15:12,142 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] HHH000397: Using ASTQueryTranslatorFactory
+2020-08-01 23:15:12,257 INFO  [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 5.2.4.Final
+2020-08-01 23:15:13,892 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000228: Running hbm2ddl schema update
+2020-08-01 23:15:13,892 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000102: Fetching database metadata
+2020-08-01 23:15:13,895 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000396: Updating schema
+2020-08-01 23:15:13,901 INFO  [java.sql.DatabaseMetaData] HHH000262: Table not found: MOCK_MESSAGE
+2020-08-01 23:15:13,902 INFO  [java.sql.DatabaseMetaData] HHH000262: Table not found: MOCK_RESOURCE
+2020-08-01 23:15:13,903 INFO  [java.sql.DatabaseMetaData] HHH000262: Table not found: ROLE_DETAILS
+2020-08-01 23:15:13,904 INFO  [java.sql.DatabaseMetaData] HHH000262: Table not found: SERVER_DETAILS
+2020-08-01 23:15:13,906 INFO  [java.sql.DatabaseMetaData] HHH000262: Table not found: USER_DETAILS
+2020-08-01 23:15:13,908 INFO  [java.sql.DatabaseMetaData] HHH000262: Table not found: MOCK_MESSAGE
+2020-08-01 23:15:13,909 INFO  [java.sql.DatabaseMetaData] HHH000262: Table not found: MOCK_RESOURCE
+2020-08-01 23:15:13,910 INFO  [java.sql.DatabaseMetaData] HHH000262: Table not found: ROLE_DETAILS
+2020-08-01 23:15:13,911 INFO  [java.sql.DatabaseMetaData] HHH000262: Table not found: SERVER_DETAILS
+2020-08-01 23:15:13,911 INFO  [java.sql.DatabaseMetaData] HHH000262: Table not found: USER_DETAILS
+2020-08-01 23:15:13,930 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] HHH000232: Schema update complete
