@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mamon-ui-menu-config xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <menu>
+        <name>File</name>
+        <mnemonic>F</mnemonic>
+        <menuItem>
+            <name>Doc</name>
+            <mnemonic>D</mnemonic>
+            <menuItem>
+	            <name>Save</name>
+	            <mnemonic>S</mnemonic>
+	            <componentName>HomeControllerImpl</componentName>
+	        </menuItem>
+	        <menuItem>
+	            <name>Open</name>
+	            <mnemonic>O</mnemonic>
+	            <componentName>componentName</componentName>
+	        </menuItem>
+        </menuItem>
+        <menuItem>
+            <name>Excel</name>
+            <mnemonic>D</mnemonic>
+            <menuItem>
+	            <name>Save</name>
+	            <mnemonic>S</mnemonic>
+	            <menuItem>
+		            <name>After Save</name>
+		            <mnemonic>S</mnemonic>
+		            <componentName>componentName</componentName>
+		        </menuItem>
+		        <menuItem>
+		            <name>After Commit</name>
+		            <mnemonic>O</mnemonic>
+		            <componentName>componentName</componentName>
+		        </menuItem>
+	        </menuItem>
+	        <menuItem>
+	            <name>Open</name>
+	            <mnemonic>O</mnemonic>
+	            <componentName>componentName</componentName>
+	        </menuItem>
+        </menuItem>
+    </menu>
+    <menu>
+        <name>Help</name>
+        <mnemonic>H</mnemonic>
+        <menuItem>
+            <name>Welcome</name>
+            <mnemonic>W</mnemonic>
+            <componentName>HomeControllerImplDup</componentName>
+        </menuItem>
+    </menu>
+</mamon-ui-menu-config>

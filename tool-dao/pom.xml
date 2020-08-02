@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<groupId>com.das</groupId>
+	<artifactId>tool-dao</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<url>http://maven.apache.org</url>
+    <name>tool-dao</name>
+    <properties>
+        <jacoco-plugin.version>0.7.7.201606060606</jacoco-plugin.version>
+	    <sonar.jacoco.reportPath>${basedir}/target/coverage-reports/jacoco-unit.exec</sonar.jacoco.reportPath>
+        <sonar.java.codeCoveragePlugin>jacoco</sonar.java.codeCoveragePlugin>
+	</properties>
+    <dependencies>
+    	<dependency>
+			<groupId>com.drishlent</groupId>
+			<artifactId>dlite-orm</artifactId>
+			<version>1.0.1</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.das</groupId>
+			<artifactId>tool-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+			
+		<dependency>
+			<groupId>com.drishlent</groupId>
+			<artifactId>dlite-test</artifactId>
+			<version>1.0.1</version>
+			<scope>test</scope>
+	    </dependency>
+	    
+	     <dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-validator</artifactId>
+		    <version>5.2.4.Final</version>
+		</dependency>
+		
+		<dependency>
+		   <groupId>javax.el</groupId>
+		   <artifactId>javax.el-api</artifactId>
+		   <version>2.2.4</version>
+		</dependency>
+
+    </dependencies>
+		
+	<build>
+        <plugins>
+            <!-- Sachhida adding jacoco plugin for the code coverage and run mvn clean package -->
+            <plugin>
+			  <groupId>org.jacoco</groupId>
+			  <artifactId>jacoco-maven-plugin</artifactId>
+			  <version>${jacoco-plugin.version}</version>
+			  <configuration>
+				<excludes>
+                    <!-- <exclude>**/*Dto.*</exclude>  It is working -->
+					<exclude>com/das/repository/*</exclude> <!-- It is working -->
+                </excludes>
+				
+				<!-- need to test
+				<exclude>**/*Config.*</exclude>
+				<exclude>**/*Dev.*</exclude>
+				<exclude>some/package/SomeClass.java</exclude>
+				-->
+			  <!--  -->
+			   <destFile>${basedir}/target/coverage-reports/jacoco-unit.exec</destFile>
+			   <dataFile>${basedir}/target/coverage-reports/jacoco-unit.exec</dataFile>
+			   <outputDirectory>${basedir}/target/coverage-reports/jacoco-unit</outputDirectory>
+			   <propertyName>surefire.argLine</propertyName>
+			  </configuration>
+				  <executions>
+				    <execution>
+				         <id>prepare-agent</id>
+				        <goals>
+				            <goal>prepare-agent</goal>
+				        </goals>
+				    </execution>
+				    <execution>
+				        <id>report</id>
+				        <phase>test</phase>
+				        <goals>
+				            <goal>report</goal>
+				        </goals>
+				    </execution>
+				    <execution>
+				        <id>post-unit-test</id>
+				        <phase>test</phase>
+				        <goals>
+				            <goal>report</goal>
+				        </goals>
+				    </execution>
+				</executions>
+			 </plugin>
+			 <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <argLine>-Xmx256m ${surefire.argLine}</argLine>
+                    <runOrder>alphabetical</runOrder>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+	
+</project>

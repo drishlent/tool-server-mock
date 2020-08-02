@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<groupId>com.das</groupId>
+	<artifactId>tool-server-mock</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+    <name>Mock Server Tool Build</name>
+    
+    <modules>
+		<module>tool-common</module>
+		<module>tool-dao</module>
+		<module>tool-ui-main</module>
+		<module>tool-ui-config</module>
+		<module>tool-ui-resource</module>
+		<module>tool-ui-swagger</module>
+	</modules>
+    
+</project>
